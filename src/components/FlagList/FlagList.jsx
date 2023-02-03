@@ -7,8 +7,15 @@ function FlagList() {
 
   return (
     <div>
-      FlagList
-      {flags ? flags.map((flag) => <FlagCard {...flag} />) : null}
+      <div className="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 justify-content-center mt-5 mb-5">
+        {flags
+          ? flags.map((flag, index) => (
+              <div key={index}>
+                <FlagCard {...flag} />
+              </div>
+            ))
+          : null}
+      </div>
     </div>
   );
 }

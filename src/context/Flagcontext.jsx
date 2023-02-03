@@ -9,17 +9,19 @@ export default FlagsContext;
 export function FlagsContextProvider({ children}) {
 
     const [flags, setFlags] = useState([]);
+    
 
     const getFlags = () => {
         axios
-        .get("https://restcountries.com/v2/all")
+        .get("https://restcountries.com/v3.1/all")
         .then((response) => setFlags(response.data))
     };
-    useEffect(() => {
-        getFlags();
-    }, []);
-
-
+    
+      useEffect(() => {
+          getFlags();
+        }, []);
+        
+      
   return (
    <FlagsContext.Provider
    value = {{
