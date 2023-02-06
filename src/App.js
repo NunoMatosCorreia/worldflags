@@ -6,7 +6,7 @@ import About from './components/About/About';
 import FlagList from './components/FlagList/FlagList';
 import FlagDetails from './components/FlagList/FlagDetails/FlagDetails';
 import {Routes, Route} from "react-router-dom";
-import { FlagsContextProvider } from './context/Flagcontext';
+import { FlagsContextProvider } from './context/FlagsContext';
 
 
 function App() {

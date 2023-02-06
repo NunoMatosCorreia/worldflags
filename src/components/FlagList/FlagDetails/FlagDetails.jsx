@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 // import axios from "axios";
 import { useParams, Link } from "react-router-dom";
-import FlagsContext from "../../../context/Flagcontext";
+import FlagsContext from "../../../context/FlagsContext";
 
 const FlagDetails = () => {
   const [country, setCountry] = useState([]);
